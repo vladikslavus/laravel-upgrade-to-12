@@ -12,6 +12,9 @@
             <li><a href="/profile" class="list__link">profile</a></li>
             <li><a href="/change-password" class="list__link">showChangePasswordForm</a></li>
             <hr>
+            <li><a href="/api/books" class="list__link">[ApiBookController::class, 'index']</a></li>
+            <li><a href="/api/books/5" class="list__link">[ApiBookController::class, 'show']</a></li>
+            <hr>
             <li><a href="/latest-grade" class="list__link">latestGradeRelation</a></li>
             <li><a href="/first-grade" class="list__link">firstGradeRelation</a></li>
             <li><a href="/highest-grade" class="list__link">highestGradeRelation</a></li>
