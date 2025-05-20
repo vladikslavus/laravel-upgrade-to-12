@@ -2,18 +2,23 @@
 @section('title', $title)
 @section('content')
     <div class="wrapper">
-        <h1>Страницы</h1>
-        <ul class="books">
-            <li><a href="/books" class="books__link">Книги</a></li>
-            <li><a href="/books/insert/2" class="books__link">Добавить книгу по id автора</a></li>
-            <li><a href="" class="books__link"></a></li>
-            <li><a href="" class="books__link"></a></li>
-            <li><a href="" class="books__link"></a></li>
-            <li><a href="" class="books__link"></a></li>
-            <li><a href="" class="books__link"></a></li>
-            <li><a href="" class="books__link"></a></li>
-            <li><a href="" class="books__link"></a></li>
-            <li><a href="" class="books__link"></a></li>
+        <h1>Ссылки</h1>
+        <ul class="list">
+            <li><a href="/books" class="list__link">Книги</a></li>
+            <li><a href="/books/insert/2" class="list__link">Добавить книгу по id автора = 2</a></li>
+            <hr>
+            <li><a href="/login" class="list__link">loginForm</a></li>
+            <li><a href="/register" class="list__link">registerForm</a></li>
+            <li><a href="/profile" class="list__link">profile</a></li>
+            <li><a href="/change-password" class="list__link">showChangePasswordForm</a></li>
+            <hr>
+            <li><a href="/latest-grade" class="list__link">latestGradeRelation</a></li>
+            <li><a href="/first-grade" class="list__link">firstGradeRelation</a></li>
+            <li><a href="/highest-grade" class="list__link">highestGradeRelation</a></li>
+            <li><a href="/lowest-grade" class="list__link">lowestGradeRelation</a></li>
+            <li><a href="/latest-valid-grade" class="list__link">latestValidGradeRelation</a></li>
+            <hr>
+            <li><a href="/show-monitor-by-teacher" class="list__link">showMonitorByTeacher (Has One Through )</a></li>
         </ul>
     </div>
 @endsection

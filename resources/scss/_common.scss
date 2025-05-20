@@ -13,31 +13,81 @@ body {
     padding: 0;
 }
 
+h1 {
+    font-size: 28px;
+}
+
 a {
     color: white;
 }
 
-.header {
+%header-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 10px 15px;
+    width: 100vw;
     background-color: black;
 }
 
-.wrapper {
-    padding: 10px 15px;
-    width: 100vw;
-    height: 100vh;
+.page {
     display: flex;
     flex-direction: column;
-    // justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
-.books,
+.header {
+    @extend %header-footer;
+
+    .nav-link {
+        font-size: 12px;
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.footer {
+    @extend %header-footer;
+    padding: 20px 15px;
+}
+
+.navbar {
+    width: 350px;
+    padding: 0 15px 0 20px;
+}
+
+.wrapper {
+    padding: 20px 15px 10px;
+    max-width: 350px;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.list,
 .navbar-nav {
     list-style: none;
-    line-height: 1.5;
+    line-height: 1.8;
 }
 
-.books {
+.list {
     margin-top: 15px;
+
+    &__link {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+hr {
+    margin: 10px 0;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, .3);
 }
