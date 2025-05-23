@@ -41,3 +41,6 @@ Route::get('/lowest-grade', [TestController::class, 'lowestGradeRelation']);
 Route::get('/latest-valid-grade', [TestController::class, 'latestValidGradeRelation']);
 
 Route::get('/show-monitor-by-teacher', [TestController::class, 'showMonitorByTeacher']);
+
+Route::get('/show-city-books/{id}', [TestController::class, 'showCityBooks']);
+Route::get('/show-city-books-titles/{id}', [TestController::class, 'showCityBooksTitles']);

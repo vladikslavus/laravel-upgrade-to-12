@@ -13,6 +13,7 @@ class Teacher extends Model
 
     public function monitor()
     {
+        // 1-й параметр это конечная модель/ 2-q через какую модель
         return $this->hasOneThrough(Monitor::class, Classroom::class); // Порядок обязателен, мы через монитора получам связь с классом
     }
 }

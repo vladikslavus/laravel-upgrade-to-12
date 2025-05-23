@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\City;
 use App\Models\Student;
 use App\Models\Teacher;
 
@@ -50,5 +51,25 @@ class TestController extends Controller
 
         // return ($monitor === null);
         return 'Учитель ' . $teacher->name . ' заведует старостой '. $monitor->name;
+    }
+
+    public function showCityBooks($id)
+    {
+        $city = City::find($id);
+
+        $books = $city->cityBooks;
+
+        return response()->json($books);
+    }
+
+    public function showCityBooksTitles($id)
+    {
+        $bookTitles = City::findOrFail($id)
+                ->cityBooks()
+                ->select('title')
+                ->get()
+                ->pluck('title');
+
+        return response()->json($bookTitles);
     }
 }

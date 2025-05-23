@@ -21,7 +21,9 @@
             <li><a href="/lowest-grade" class="list__link">lowestGradeRelation</a></li>
             <li><a href="/latest-valid-grade" class="list__link">latestValidGradeRelation</a></li>
             <hr>
-            <li><a href="/show-monitor-by-teacher" class="list__link">showMonitorByTeacher (Has One Through )</a></li>
+            <li><a href="/show-monitor-by-teacher" class="list__link">showMonitorByTeacher (Has One Through)</a></li>
+            <li><a href="/show-city-books/1" class="list__link">showCityBooks (Has Many Through )</a></li>
+            <li><a href="/show-city-books-titles/1" class="list__link">showCityBooksTitles (Has Many Through)</a></li>
         </ul>
     </div>
 @endsection
